@@ -1,0 +1,6 @@
+The purpose of this asset is to bring an alternative way of pathfollow2D. Simpler and easier to apply. In the asset contains a script for KinematicBody2D and a node with positions as child. The script uses the node positions to follow.
+Functionalities. The asset makes it easy to create a path simply by duplicating the positions and dragging on the map. Contains loop options to continue forever. And the reverse option that makes the path inverse as the object reaches the end point. There is also how to enable or disable the rotation of KinematicBody2D.
+How to use: in the script we have the variables loop, reverse, rotation and velocity.
+Loop boolean true == continue false == ends at the end, reverse true == back where it came from, rotation true == rotate for the next target, velocity represents the pixels per second that the object will walk. To add more points to the KinematicBody2D follow just simply duplicate the position that is inside the node that is already ready.
+You can implement more to existing code. But to work you must leave the path function inside phisics process.
+How does it work. It contains a node with positions inside and each position has a small collision in. When it collides it goes to the next target.
